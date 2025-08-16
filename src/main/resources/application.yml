@@ -1,1 +1,13 @@
-spring.application.name=scheduleanduser
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/testschedule
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
